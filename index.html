@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function showPage(pageId) {
+            
+            document.querySelectorAll('.page').forEach(page => page.style.display = 'none');
+
+            
+            document.getElementById(pageId).style.display = 'flex';
+        }
+
+        window.onload = () => {
+            showPage('home'); 
+        };
+    </script>
+</head>
+<body>
+
+    
+    <nav class="navbar">
+        <div class="logo">MyPortfolio.</div>
+        <div class="nav-links">
+            <a onclick="showPage('home')">Home</a>
+            <a onclick="showPage('about')">About</a>
+            <a onclick="showPage('photos')">Photos</a>
+            <a onclick="showPage('contact')">Contact</a>
+        </div>
+    </nav>
+
+    
+    <section class="glass">
+
+        
+        <div id="home" class="page hero">
+            <div class="hero-text">
+                <h1>Hi, I'm <span>Jerald Esto</span></h1>
+                <h2>Frontend Developer</h2>
+                <p>Welcome to my portfolio! I build clean, modern, and responsive web experiences.</p>
+
+                
+                <div class="buttons">
+                    <button class="btn-primary">Let's Talk</button>
+                </div>
+
+                
+                 <div class="socials"> 
+            <a href="#"><i>FB</i></a>
+            <a href="#"><i>IG</i></a>
+        </div>
+    </div>
+
+            <div class="hero-img">
+                <div class="profile-wrapper">
+                    <img src="https://scontent.fceb1-3.fna.fbcdn.net/v/t1.6435-9/180619231_976958746408600_1598792675188818775_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeF9U9hdDq16gBOUQgzoqBF5xhEv5ckP9j_GES_lyQ_2P9sA2Bexd2sYeVqah4nxFHE3DbEyKMWxpz6OSUKb4KYU&_nc_ohc=XNHsxjXI8h8Q7kNvwHq6e4e&_nc_oc=Adm1P0ubnd1QXK3rbxz7yU4t4hZVhYEDsE_wBPI9tI3PXfnCPoMTSYbNSNoFKv5aPtQ&_nc_zt=23&_nc_ht=scontent.fceb1-3.fna&_nc_gid=rdwfzbK35VmIrfzXKoTkkw&oh=00_AfkhjQcygO5VlbULYPfffjP7v6KfLV0LwWWPvRXUXhLtIg&oe=6963A966" alt="Profile Picture">
+                </div>
+            </div>
+        </div>
+
+       
+        <div id="about" class="page">
+            <h1>About Me</h1>
+            <p>
+                I am a developer passionate about building modern interfaces and smooth user experiences. 
+                I enjoy creating visually appealing and highly responsive websites that delight users.
+            </p>
+        </div>
+
+        
+        <div id="photos" class="page">
+            <h1>My Photos</h1>
+            <div class="photo-grid">
+                <img src="https://scontent.fceb1-3.fna.fbcdn.net/v/t1.6435-9/121158962_844037846367358_8930108006588199019_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHyaja_UrKq6BfY7wHyMSYkV9rjNKb2TORX2uM0pvZM5G9oMuDxKGvxBDt8X1NCQiNvsUzQrwVfpwMxe9k9z_TA&_nc_ohc=MnZ22ZgP7iIQ7kNvwHr6KAs&_nc_oc=Adn2w8Zw03E4Sy6gnq14Wl61iU7pESEDqX41F6luoTgWhSX3oClkGO3RFFOGiSgSd-A&_nc_zt=23&_nc_ht=scontent.fceb1-3.fna&_nc_gid=kuwYFEg94Mx9bKHd6mADQQ&oh=00_AfmRAAtr_EvnmGm4hy7RsW38v-gjEeA_qzGnxjlIyK7eyA&oe=6963B969" alt="">
+                <img src="https://scontent.fceb1-2.fna.fbcdn.net/v/t39.30808-6/480573774_1895430517894747_7287620477847726141_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeESs7ds6NMQSQ3vL5tYYx0cCD--y6zVLaMIP77LrNUto8TPoBJE1NFGY1sYdJW36qrpz1Xiq1xDLkdhikAMURDY&_nc_ohc=dqKCQK3jGfAQ7kNvwESQOGO&_nc_oc=AdkDmdOyRjWcPbvyfUv1plBYuUnbNaEVqbuVcvMH8Uu3UxE7GIcfP3XIr4pkluPmpdk&_nc_zt=23&_nc_ht=scontent.fceb1-2.fna&_nc_gid=z5G63fGsd5QXG2DUXLqIBw&oh=00_AfnYbn7D42lFdor1lu4Z0Po5pJnytiFkZZoBpq3L7_9qVg&oe=69422B93" alt="">
+                <img src="https://scontent.fceb1-5.fna.fbcdn.net/v/t39.30808-6/480608100_1892886494815816_5862836149484008504_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeH1RJz10HodHRjUnA9biLdxXO_ha23w6QVc7-FrbfDpBU1PqmhhjVI5arCObBabd9U_QAwrHStKNzJa2ST_Xpqo&_nc_ohc=P3DZOMJepf4Q7kNvwGPKNMR&_nc_oc=AdlOmROJInbsQK4FXTey2njWcjR_UBzYRvFt7RurHHPUOOVW0Qs9PDIcCtG8YDOY0Bc&_nc_zt=23&_nc_ht=scontent.fceb1-5.fna&_nc_gid=zFLGpZfmPDwDdK49bse2VQ&oh=00_AfkWOi1M-DJgqVSw1juTtgp1_K-o7zufqSpQNt_1BI0wPQ&oe=6942117F" alt="">
+            </div>
+        </div>
+
+        
+        <div id="contact" class="page">
+    <h1>Contact Me</h1>
+    <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:estojerald05@gmail.com">estojerald05@gmail.com</a></p>
+        <p><strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=61557283119814" target="_blank">Jerald Esto</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+639488260848">+639488260848</a></p>
+    </div>
+</div>
+
+
+    </section>
+
+</body>
+</html>
